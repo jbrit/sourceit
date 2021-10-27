@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="py-20 bg-white">
       <div className="max-w-7xl px-3 mx-auto flex flex-col items-center">
         <span className="inline-block mb-7">
-          <Image src="/logo.png" height="85" width="156" />
+          <Image src="/logo.png" alt="SourceMyGadgets" height="85" width="156" />
         </span>
         <div className="flex mb-7 text-lg">
           <Link href="/">

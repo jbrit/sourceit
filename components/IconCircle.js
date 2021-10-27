@@ -9,7 +9,7 @@ const IconCircle = ({ children, name, href }) => {
       style={{ background: "#F4F7FC", height: "2rem", width: "2rem" }}
     >
       {children}
-      {name && <Image src={`/icons/${name}.svg`} height="16" width="16" />}
+      {name && <Image src={`/icons/${name}.svg`} alt={name} height="16" width="16" />}
     </span>
   );
 

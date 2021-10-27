@@ -8,7 +8,12 @@ const Navbar = () => {
       <div className="max-w-7xl px-3 mx-auto">
         <div className="flex items-center font-normal">
           <span className="inline-block mr-auto">
-            <Image src="/logo.png" height="85" width="156" />
+            <Image
+              src="/logo.png"
+              alt="SourceMyGadgets"
+              height="85"
+              width="156"
+            />
           </span>
           <div className="text-lg">
             <Link href="/">
