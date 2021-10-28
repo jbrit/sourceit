@@ -4,5 +4,22 @@
 
 body {
   font-family: "Red Hat Display", sans-serif;
-  background: #FFFDF8;
+  background: #fffdf8;
+}
+
+.newsletter {
+  background: url("../public/wave.svg"),
+    linear-gradient(
+      rgba(96, 165, 250, var(--tw-bg-opacity)),
+      rgba(96, 165, 250, var(--tw-bg-opacity))
+    );
+  background-size: cover;
+}
+.newsletter-circle {
+  height: 60px;
+  width: 60px;
+  border: 5px solid #fff9f9;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
 }
