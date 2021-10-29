@@ -8,7 +8,16 @@ const faqTabData = {
   "About Us": [
     { question: "What is SourceMyGadgets?", answer: "a" },
     { question: "Do you sell both new and used gadgets?", answer: "a" },
-    { question: "What is Source IT and how does it work?", answer: "a" },
+    {
+      question: "What is Source IT and how does it work?",
+      answer: `Source IT is popularly used by customers who know what type of gadgets they want to buy and are looking for a trusted merchant they can buy from with ease, trust, and convenience.
+
+    How it works-
+    Simply fill a personalized questionnaire ( let the SourceIt link be here) with information about the gadget you want to buy.
+    A follow-up email will be sent to you with the details of your order, price, and payment information. 
+    Once completed, you can sit back and relax while we process your order and have it delivered to your doorstep.
+    `,
+    },
     { question: "How does “Get Recommendation” work?", answer: "a" },
     { question: "Do you provide your services to companies?", answer: "a" },
     { question: "What type of gadgets do you source for?", answer: "a" },
