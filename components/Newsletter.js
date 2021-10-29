@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Newsletter = () => {
   return (
@@ -43,7 +44,7 @@ const Newsletter = () => {
           required
         />
         <button
-          className="inline-block absolute"
+          className="inline-flex items-center justify-center absolute"
           style={{
             background: "#F7B24B",
             borderRadius: "5px",
@@ -55,7 +56,10 @@ const Newsletter = () => {
             transform: "translateY(-50%)",
           }}
           type="submit"
-        ></button>
+        >
+          {" "}
+          <Image src="/send-arrow.svg" height={27.6} width={27.6} />{" "}
+        </button>
       </form>
     </section>
   );

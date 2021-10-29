@@ -1,4 +1,4 @@
-# Source It
+# SourceMyGadgets
 This is a [Next.js](https://nextjs.org/) application for source it.
 
 ## Getting Started

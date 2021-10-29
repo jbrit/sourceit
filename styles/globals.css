@@ -30,3 +30,7 @@ body {
 .selected-tab .tab-base {
   visibility: visible;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

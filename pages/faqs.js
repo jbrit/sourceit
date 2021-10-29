@@ -9,8 +9,8 @@ const faqTabData = {
     { question: "What is SourceMyGadgets?", answer: "a" },
     { question: "Do you sell both new and used gadgets?", answer: "a" },
     {
-      question: "What is Source IT and how does it work?",
-      answer: `Source IT is popularly used by customers who know what type of gadgets they want to buy and are looking for a trusted merchant they can buy from with ease, trust, and convenience.
+      question: "What is Order Now and how does it work?",
+      answer: `Order Now is popularly used by customers who know what type of gadgets they want to buy and are looking for a trusted merchant they can buy from with ease, trust, and convenience.
 
     How it works-
     Simply fill a personalized questionnaire ( let the SourceIt link be here) with information about the gadget you want to buy.
@@ -70,7 +70,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>FAQs | Source It</title>
+        <title>FAQs | Order Now</title>
         <meta name="description" content="SourceIt Web Site" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
