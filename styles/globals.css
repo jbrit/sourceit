@@ -19,7 +19,14 @@ body {
   height: 60px;
   width: 60px;
   border: 5px solid #fff9f9;
-  display: inline-block;
+  display: inline-flex;
   border-radius: 50%;
   background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
+}
+
+.tab-base {
+  visibility: hidden;
+}
+.selected-tab .tab-base {
+  visibility: visible;
 }
