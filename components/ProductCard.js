@@ -5,7 +5,7 @@ const ProductCard = ({ name, width, height }) => {
   return (
     <div className="inline-block cursor-pointer">
       <div
-        className="h-full py-4 mx-4 overflow-x-hidden hover:shadow-lg transition-all duration-500 ease-in-out "
+        className="h-full py-4 mx-4 overflow-x-hidden hover:shadow-lg transition-all duration-500 ease-in-out"
         style={{
           background: "#FFFFFF",
           border: "1px solid #E0E0E0",
@@ -14,7 +14,7 @@ const ProductCard = ({ name, width, height }) => {
         }}
       >
         <div
-          className="flex flex-col justify-center items-center transform hover:scale-105 transition-all duration-500 ease-in-out "
+          className="flex flex-col justify-center items-center transform hover:scale-105 transition-all duration-500 ease-in-out"
           style={{ height: "229px" }}
         >
           <Image

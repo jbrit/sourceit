@@ -57,7 +57,6 @@ const Newsletter = () => {
           }}
           type="submit"
         >
-          {" "}
           <Image src="/send-arrow.svg" height={27.6} width={27.6} />{" "}
         </button>
       </form>

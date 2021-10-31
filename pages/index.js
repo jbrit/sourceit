@@ -28,12 +28,20 @@ export default function Home() {
           Product Categories
         </h2>
         <div className="max-w-7xl px-3 overflow-x-auto mx-auto">
-          <div className="grid  grid-flow-col  grid-rows-1 auto-cols-auto">
+          <div className="grid  grid-flow-col  grid-rows-1 auto-cols-auto mb-9">
             <ProductCard name="Smartphones" width={197} height={148} />
-            <ProductCard name="Computers" width={380.79} height={144.49}  />
-            <ProductCard name="Consoles" width={240} height={188}  />
-            <ProductCard name="Smartwatches" width={91} height={169}  />
+            <ProductCard name="Computers" width={380.79} height={144.49} />
+            <ProductCard name="Consoles" width={240} height={188} />
+            <ProductCard name="Smartwatches" width={91} height={169} />
             <ProductCard name="Accessories" width={180} height={180} />
+          </div>
+          <div className="flex items-center justify-center">
+            <button
+              className="py-5 px-16 bg-blue-400 rounded-md text-white hover:bg-blue-500 focus:outline-none text-lg transition-all duration-500 ease-in-out"
+              type="submit"
+            >
+              Order Now
+            </button>
           </div>
         </div>
       </section>

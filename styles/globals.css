@@ -24,11 +24,22 @@ body {
   background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
 }
 
+.quality-gadgets {
+  background: url("../public/wave.svg"), linear-gradient(#f7b24b, #f7b24b);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .tab-base {
   visibility: hidden;
 }
 .selected-tab .tab-base {
   visibility: visible;
+}
+
+.form-input {
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar {

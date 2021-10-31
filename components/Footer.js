@@ -20,7 +20,7 @@ const Footer = () => {
           <Link href="/">
             <a className="inline-block mx-6 select-none">Order Now</a>
           </Link>
-          <Link href="/">
+          <Link href="/contact">
             <a className="inline-block mx-6 select-none">Contact Us</a>
           </Link>
         </div>

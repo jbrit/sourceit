@@ -7,14 +7,16 @@ const Navbar = () => {
     <nav className="bg-white py-4">
       <div className="max-w-7xl px-3 mx-auto">
         <div className="flex items-center font-normal">
-          <span className="inline-block mr-auto">
-            <Image
-              src="/logo.png"
-              alt="SourceMyGadgets"
-              height="85"
-              width="156"
-            />
-          </span>
+          <Link href="/">
+            <a className="inline-block mr-auto">
+              <Image
+                src="/logo.png"
+                alt="SourceMyGadgets"
+                height="85"
+                width="156"
+              />
+            </a>
+          </Link>
           <div className="text-lg">
             <Link href="/">
               <a className="inline-block mx-6 select-none">Home</a>
@@ -22,11 +24,11 @@ const Navbar = () => {
             <Link href="/">
               <a className="inline-block mx-6 select-none">About</a>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <a className="inline-block mx-6 select-none">Contact Us</a>
             </Link>
           </div>
-          <button className="ml-20 py-4 px-8 bg-blue-400 rounded-md text-white hover:bg-blue-500 focus:outline-none text-lg">
+          <button className="ml-20 py-4 px-8 bg-blue-400 rounded-md text-white hover:bg-blue-500 focus:outline-none text-lg transition-all duration-500 ease-in-out">
             Get Started
           </button>
         </div>
