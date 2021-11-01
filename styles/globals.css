@@ -45,3 +45,13 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Form Page */
+.form-page-container {
+  background: url("../public/wave.svg"), linear-gradient(#00adee, #00adee);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100vw;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
