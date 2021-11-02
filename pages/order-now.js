@@ -1,8 +1,23 @@
 import React from "react";
 import Head from "next/head";
 import FormPage from "../components/FormPage";
+import NameStep from "../components/recommendation/NameStep";
+import { useStep } from "../helpers/hooks";
+import ContactStep from "../components/recommendation/ContactStep";
 
 const OrderNow = () => {
+  const { step, previousStep, nextStep } = useStep(0);
+  const _renderSteps = (step) => {
+    const stepMeta = { step, previousStep, nextStep };
+    switch (step) {
+      case 0:
+        return <NameStep stepMeta={stepMeta} />;
+      case 1:
+        return <ContactStep stepMeta={stepMeta} />;
+      default:
+        return <></>;
+    }
+  };
   return (
     <div>
       <Head>
@@ -20,7 +35,7 @@ const OrderNow = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <FormPage><></></FormPage>
+      <FormPage>{_renderSteps(step)}</FormPage>
     </div>
   );
 };

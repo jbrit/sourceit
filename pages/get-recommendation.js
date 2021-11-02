@@ -2,14 +2,20 @@ import React from "react";
 import Head from "next/head";
 import FormPage from "../components/FormPage";
 import { useStep } from "../helpers/hooks";
+import NameStep from "../components/recommendation/NameStep";
+import ContactStep from "../components/recommendation/ContactStep";
 
 const GetRecommendation = () => {
   const { step, previousStep, nextStep } = useStep(0);
   const _renderSteps = (step) => {
     const stepMeta = { step, previousStep, nextStep };
     switch (step) {
+      case 0:
+        return <NameStep stepMeta={stepMeta} />;
+      case 1:
+        return <ContactStep stepMeta={stepMeta} />;
       default:
-        return <React.Fragment {...stepMeta}></React.Fragment>;
+        return <></>;
     }
   };
   return (
@@ -29,40 +35,7 @@ const GetRecommendation = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <FormPage>
-        {_renderSteps(step)}
-        <div className="mb-5" style={{ color: "#757575" }}>
-          <div className="font-bold text-2xl">
-            Let’s get started with your name
-          </div>
-          <div>
-            Please fill in the details , it’s nothing too serious, we just want
-            to know your name
-          </div>
-        </div>
-        <div className="w-full max-w-md mb-8">
-          <span style={{ color: "#757575" }} className="mb-5 block">
-            First Name
-          </span>
-          <input
-            className="form-input px-3 py-3 w-full"
-            type="text"
-            name="firstName"
-            required
-          />
-        </div>
-        <div className="w-full max-w-md mb-14">
-          <span style={{ color: "#757575" }} className="mb-5 block">
-            Last Name
-          </span>
-          <input
-            className="form-input px-3 py-3 w-full"
-            type="text"
-            name="lastName"
-            required
-          />
-        </div>
-      </FormPage>
+      <FormPage>{_renderSteps(step)}</FormPage>
     </div>
   );
 };
