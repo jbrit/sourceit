@@ -4,6 +4,7 @@ import FormPage from "../components/FormPage";
 import NameStep from "../components/recommendation/NameStep";
 import { useStep } from "../helpers/hooks";
 import ContactStep from "../components/recommendation/ContactStep";
+import SuccessStep from "../components/recommendation/SuccessStep";
 
 const OrderNow = () => {
   const { step, previousStep, nextStep } = useStep(0);
@@ -14,6 +15,8 @@ const OrderNow = () => {
         return <NameStep stepMeta={stepMeta} />;
       case 1:
         return <ContactStep stepMeta={stepMeta} />;
+      case 2:
+        return <SuccessStep />;
       default:
         return <></>;
     }
@@ -35,7 +38,7 @@ const OrderNow = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <FormPage>{_renderSteps(step)}</FormPage>
+      <FormPage stepValues={[step>=1, step>=2, step==2]} hasSteps orderNow>{_renderSteps(step)}</FormPage>
     </div>
   );
 };

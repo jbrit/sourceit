@@ -6,6 +6,7 @@ import NameStep from "../components/recommendation/NameStep";
 import ContactStep from "../components/recommendation/ContactStep";
 import GadgetInfoA from "../components/recommendation/GadgetInfoA";
 import GadgetInfoB from "../components/recommendation/GadgetInfoB";
+import SuccessStep from "../components/recommendation/SuccessStep";
 
 const GetRecommendation = () => {
   const { step, previousStep, nextStep } = useStep(0);
@@ -20,6 +21,8 @@ const GetRecommendation = () => {
         return <GadgetInfoA stepMeta={stepMeta} />;
       case 3:
         return <GadgetInfoB stepMeta={stepMeta} />;
+      case 4:
+        return <SuccessStep />;
       default:
         return <></>;
     }
@@ -41,7 +44,7 @@ const GetRecommendation = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <FormPage>{_renderSteps(step)}</FormPage>
+      <FormPage stepValues={[step>=1, step>=2, step==4]} hasSteps getRecommendation>{_renderSteps(step)}</FormPage>
     </div>
   );
 };
