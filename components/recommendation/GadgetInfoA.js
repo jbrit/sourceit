@@ -26,19 +26,19 @@ const GadgetInfoA = ({ stepMeta }) => {
         </div>
       </div>
       <div className="w-full max-w-md mb-8">
-        <span style={{ color: "#757575" }} className="mb-5 block">
+        <span style={{ color: "#757575" }} className="mb-5 block font-medium">
           What are you looking for?
         </span>
         <SelectInput  items={gadgetExamples}/>
       </div>
       <div className="w-full max-w-md mb-14">
-        <span style={{ color: "#757575" }} className="mb-5 block">
+        <span style={{ color: "#757575" }} className="mb-5 block font-medium">
           What brand do you prefer?
         </span>
         <SelectInput items={brandExamples} />
       </div>
       <div className="w-full max-w-md mb-14">
-        <span style={{ color: "#757575" }} className="mb-5 block">
+        <span style={{ color: "#757575" }} className="mb-5 block font-medium">
           What do you need the gadget for?
         </span>
         <input

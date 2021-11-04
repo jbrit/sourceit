@@ -25,7 +25,7 @@ const GetStarted = () => {
         <div style={{ color: "#757575" }} className="font-bold text-2xl mb-16">
           Hey, please select the option that best suits what you want
         </div>
-        <div className="flex">
+        <div style={{color: "#757575"}} className="flex">
           <Link href="/order-now">
             <div
               className="p-7 border rounded-lg cursor-pointer mr-8"

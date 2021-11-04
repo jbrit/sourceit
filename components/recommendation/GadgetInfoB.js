@@ -13,19 +13,19 @@ const GadgetInfoB = ({ stepMeta }) => {
         </div>
       </div>
       <div className="w-full max-w-md mb-8">
-        <span style={{ color: "#757575" }} className="mb-5 block">
+        <span style={{ color: "#757575" }} className="mb-5 block font-medium">
           What is your preference?
         </span>
         <SelectInput />
       </div>
       <div className="w-full max-w-md mb-14">
-        <span style={{ color: "#757575" }} className="mb-5 block">
+        <span style={{ color: "#757575" }} className="mb-5 block font-medium">
           What is your budget?
         </span>
         <SelectInput />
       </div>
       <div className="w-full max-w-md mb-14">
-        <span style={{ color: "#757575" }} className="mb-5 block">
+        <span style={{ color: "#757575" }} className="mb-5 block font-medium">
           What are the top priority features that you want the gadget to have?
         </span>
         <input
@@ -37,7 +37,7 @@ const GadgetInfoB = ({ stepMeta }) => {
         />
       </div>
       <div className="w-full max-w-md mb-14">
-        <span style={{ color: "#757575" }} className="mb-5 block">
+        <span style={{ color: "#757575" }} className="mb-5 block font-medium">
           How would you like to reach us?
         </span>
         <input

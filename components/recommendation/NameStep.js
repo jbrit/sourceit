@@ -15,7 +15,7 @@ const NameStep = ({ stepMeta }) => {
         </div>
       </div>
       <div className="w-full max-w-md mb-8">
-        <span style={{ color: "#757575" }} className="mb-5 block">
+        <span style={{ color: "#757575" }} className="mb-5 block font-medium">
           First Name
         </span>
         <input
@@ -26,7 +26,7 @@ const NameStep = ({ stepMeta }) => {
         />
       </div>
       <div className="w-full max-w-md mb-14">
-        <span style={{ color: "#757575" }} className="mb-5 block">
+        <span style={{ color: "#757575" }} className="mb-5 block font-medium">
           Last Name
         </span>
         <input
