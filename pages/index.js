@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
@@ -36,12 +37,14 @@ export default function Home() {
             <ProductCard name="Accessories" width={180} height={180} />
           </div>
           <div className="flex items-center justify-center">
-            <button
-              className="py-5 px-16 bg-blue-400 rounded-md text-white hover:bg-blue-500 focus:outline-none text-lg transition-all duration-500 ease-in-out"
-              type="submit"
-            >
-              Order Now
-            </button>
+            <Link href="/order-now">
+              <button
+                className="py-5 px-16 bg-blue-400 rounded-md text-white hover:bg-blue-500 focus:outline-none text-lg transition-all duration-500 ease-in-out"
+                type="submit"
+              >
+                Order Now
+              </button>
+            </Link>
           </div>
         </div>
       </section>

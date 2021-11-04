@@ -28,9 +28,11 @@ const Navbar = () => {
               <a className="inline-block mx-6 select-none">Contact Us</a>
             </Link>
           </div>
-          <button className="ml-20 py-4 px-8 bg-blue-400 rounded-md text-white hover:bg-blue-500 focus:outline-none text-lg transition-all duration-500 ease-in-out">
-            Get Started
-          </button>
+          <Link href="/get-started">
+            <button className="ml-20 py-4 px-8 bg-blue-400 rounded-md text-white hover:bg-blue-500 focus:outline-none text-lg transition-all duration-500 ease-in-out">
+              Get Started
+            </button>
+          </Link>
         </div>
       </div>
     </nav>

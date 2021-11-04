@@ -4,6 +4,8 @@ import FormPage from "../components/FormPage";
 import { useStep } from "../helpers/hooks";
 import NameStep from "../components/recommendation/NameStep";
 import ContactStep from "../components/recommendation/ContactStep";
+import GadgetInfoA from "../components/recommendation/GadgetInfoA";
+import GadgetInfoB from "../components/recommendation/GadgetInfoB";
 
 const GetRecommendation = () => {
   const { step, previousStep, nextStep } = useStep(0);
@@ -14,6 +16,10 @@ const GetRecommendation = () => {
         return <NameStep stepMeta={stepMeta} />;
       case 1:
         return <ContactStep stepMeta={stepMeta} />;
+      case 2:
+        return <GadgetInfoA stepMeta={stepMeta} />;
+      case 3:
+        return <GadgetInfoB stepMeta={stepMeta} />;
       default:
         return <></>;
     }
