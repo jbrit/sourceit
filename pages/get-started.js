@@ -28,7 +28,7 @@ const GetStarted = () => {
         <div style={{color: "#757575"}} className="flex">
           <Link href="/order-now">
             <div
-              className="p-7 border rounded-lg cursor-pointer mr-8"
+              className="p-7 border rounded-lg cursor-pointer mr-8 hover:text-blue-400 hover:bg-blue-100"
               style={{ width: "43%", height: "300px", maxWidth: "316px" }}
             >
               <div className="font-bold text-center mb-6">Order Now</div>
@@ -40,7 +40,7 @@ const GetStarted = () => {
           </Link>
           <Link href="/get-recommendation">
             <div
-              className="p-7 border rounded-lg cursor-pointer"
+              className="p-7 border rounded-lg cursor-pointer hover:text-blue-400 hover:bg-blue-100"
               style={{ width: "43%", height: "300px", maxWidth: "316px" }}
             >
               <div className="font-bold text-center mb-6">
